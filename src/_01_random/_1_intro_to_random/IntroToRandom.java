@@ -11,11 +11,12 @@ public class IntroToRandom {
 		int num = 0;
 		
 		//3   Now to make num random. 
+		Random ran = new Random();
 		//3a. Create an object of the Random class, Hint: Random ran = new Random()
-		
+	num=	ran.nextInt(88 - -222+1 + -222); 
 		//3b. Next, set the value of num, using .nextInt() to get a random number from the Random object
-		
-
+		System.out.println(num);
+        
 		//4. Now limit the value of num to be between 0 and 100
 
 		//5. Now limit the value of num to be between 25 and 75. Hint: ((highest value - lowest value)+1) + lowest value
