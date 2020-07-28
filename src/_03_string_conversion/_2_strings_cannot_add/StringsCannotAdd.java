@@ -1,10 +1,22 @@
-package _2_strings_cannot_add;
+package _03_string_conversion._2_strings_cannot_add;
 
 import javax.swing.JOptionPane;
 
 public class StringsCannotAdd {
 
 		// 1) Make a main method that includes all the steps below…. 
+		public static void main(String[] args) {
+			String fourAsString = JOptionPane.showInputDialog("can you enter the number 4");
+			String sixAsString = JOptionPane.showInputDialog("can you enter the number 6");
+			JOptionPane.showMessageDialog(null, sixAsString + fourAsString);
+			String fiveAsString = JOptionPane.showInputDialog("can you enter the number 5");
+			JOptionPane.showMessageDialog(null, fiveAsString + sixAsString + fourAsString);
+			int fourAsInt = Integer.parseInt(fourAsString);
+			int sixAsInt = Integer.parseInt(sixAsString);
+			JOptionPane.showMessageDialog(null, fourAsInt + sixAsInt);
+			int fiveAsInt = Integer.parseInt(fiveAsString);
+			JOptionPane.showMessageDialog(null, fourAsString + fiveAsString + sixAsString);
+		}
 		
 			// 2) Ask the user to enter number 4 and hold it in the variable fourAsString 
 			
